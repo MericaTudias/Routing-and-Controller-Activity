@@ -7,6 +7,7 @@
     <title>About Me</title>
 </head>
 <body>
-    
+    <h1>About Me</h1>
+    @dd($data);
 </body>
 </html>

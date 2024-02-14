@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\AboutMeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,6 +18,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/aboutMe/{id}', [AboutMeController::class, 'show']);
+Route::get('/AboutMe/{id}', [AboutMeController::class, 'show']);
 Route::get('/skills/{id}', [SkillsController::class, 'show']);
 Route::get('/hobbies/{id}', [HobbiesController::class, 'show']);
