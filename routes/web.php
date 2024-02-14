@@ -16,3 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/aboutMe/{id}', [AboutMeController::class, 'show']);
+Route::get('/skills/{id}', [SkillsController::class, 'show']);
+Route::get('/hobbies/{id}', [HobbiesController::class, 'show']);
