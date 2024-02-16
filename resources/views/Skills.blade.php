@@ -7,6 +7,7 @@
     <title>Skills</title>
 </head>
 <body>
-    
+    <h1>Skills</h1>
+    @dd($data);
 </body>
 </html>

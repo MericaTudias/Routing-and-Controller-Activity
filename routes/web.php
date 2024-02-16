@@ -2,6 +2,8 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\AboutMeController;
+use App\Http\Controllers\HobbiesController;
+use App\Http\Controllers\SkillsController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,5 +21,5 @@ Route::get('/', function () {
 });
 
 Route::get('/AboutMe/{id}', [AboutMeController::class, 'show']);
-Route::get('/skills/{id}', [SkillsController::class, 'show']);
-Route::get('/hobbies/{id}', [HobbiesController::class, 'show']);
+Route::get('/Skills/{id}', [SkillsController::class, 'show']);
+Route::get('/Hobbies/{id}', [HobbiesController::class, 'show']);
