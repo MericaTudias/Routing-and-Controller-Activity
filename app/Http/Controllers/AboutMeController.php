@@ -6,18 +6,14 @@ use Illuminate\Http\Request;
 
 class AboutMeController extends Controller
 {
-    public function show($id){
+    public function index(){
         $data = array(
             "Name" => "Merica Tudias",
-            "Age" => "20",
-            "Email" => "mericatudias33@gmail.com",
-            "Date of Birth" => "October 13, 2003",
-            "Place of Birth" => "Baguio City",
-            "Gender" => "Female",
-            "Citizenship" => "Filipino",
-            "Height" => "162 (di ko sureee)",
-            "Weight" => "47kgs (di ko din sureee hehe)",
-            "Language/Dialect" => "English, Filipino, Ilokano, Ibaloi",
+            "Age" => 20,
+            "University" => "University of the Cordilleras",
+            "Year" => "3rd year",
+            "Course" => "Bachelor of Science in Infromation Technology",
+            "Major" => "Web Development",
         );
 
         return view('AboutMe', ["data" => $data]);

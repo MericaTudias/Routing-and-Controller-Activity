@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class HobbiesController extends Controller
 {
-    public function show($id){
+    public function index(){
         $data = array(
             "Hobbies" => "Reading, Binge Watching Movies and Series, Crocheting, Listening to Music and Podcasts",
         );
